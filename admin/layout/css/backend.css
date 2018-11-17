@@ -1,0 +1,375 @@
+/* start main ruls*/
+body{
+	background: #f4f4f4;
+    font-size: 18px;
+}
+
+.astrisk{
+    position: absolute;
+    top: 8px;
+    right: 30px;
+    color: #de0707;
+    font-size: 30px;
+    
+}
+
+.nice-msg {
+    padding: 10px;
+    margin: 10px 0;
+    background: #fff;
+    border-left: 5px solid #080
+}
+
+/* start login form */
+.login{
+	width: 300px;
+	margin: 100px auto;
+}
+
+.login h4{
+	color: #888;
+}
+
+.login input{
+	margin-bottom: 10px;
+}
+
+.login .form-control{
+	background: #EAEAEA;
+}
+
+.login .btn{
+	background: #008dde
+}
+
+/* start bootstrap editor */
+.nav{
+    border-radius: 0;
+    margin-bottom: 0
+}
+.navbar-brand{
+    font-size: 1em ;/*mein 1 from the page font size*/
+}
+
+.navbar-nav>li>a,
+.navbar-brand{
+    padding: 15px 12px;
+}
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:focus,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.dropdown-menu{
+    background: #3498db;
+}
+
+.dropdown-menu{
+    min-width: 180px;
+    padding: 0;
+    font-size: 1em;
+    border: none;
+    border-radius: 0;
+}
+
+.dropdown-menu > li > a{
+    color: #fff;
+    padding: 10px 15px
+}
+
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover{
+    color: #fff;
+    background-color: #8e44ed
+}
+
+.form-control{
+    position: relative;
+}
+
+/* start dashbord page */
+.home-stats .stat{
+    padding: 20px;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.home-stats .stat i{
+    position: absolute;
+    font-size: 80px;
+    top: 35px;
+    left: 30px;
+}
+
+.home-stats .stat .info {
+   float: right
+    
+}
+
+.home-stats .stat span{
+    display: block;
+    font-size: 60px
+}
+
+.home-stats .stat a{
+    color: #fff;
+}
+
+.home-stats .stat a:hover{
+    text-decoration: none;
+}
+
+.home-stats .st-members{
+    background: #3498db
+}
+
+.mange-mem img {
+    width: 50px;
+    height: 50px
+}
+
+.home-stats .st-pending{
+    background: #c0392b;
+}
+
+.home-stats .st-items{
+    background: #d35400;
+}
+.home-stats .st-comments{
+    background: #8e44ad
+}
+
+.latest {
+    margin-top: 30px
+}
+
+.latest .toggle-info {
+    color: #999;
+    cursor: pointer
+}
+
+.latest .toggle-info:hover{
+    color: #444;
+}
+
+.latest-users{
+    margin-bottom: 0;
+}
+
+.latest-users li{
+    padding: 10px;
+    overflow: hidden 
+}
+
+.latest-users li:nth-child(odd){
+    background: #eee
+}
+
+.latest-users .btn-success,
+.latest-users .btn-info{
+    padding: 2px 8px;
+}
+
+.latest-users .btn-info {
+    margin-right: 5px
+}
+
+.latest .comment-box{
+    margin: 5px 0 10px;
+    position: relative
+}
+
+.latest .comment-box .mem-n,
+.latest .comment-box .mem-c {
+    float: left
+}
+
+.latest .comment-box .mem-n {
+    margin-right: 20px;
+    width: 80px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
+.latest .comment-box .mem-c {
+    width: calc(100% - 100px);
+    background: #eee;
+    padding: 10px;
+    position: relative;
+}
+
+.latest .comment-box .mem-c:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: -28px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent #eee transparent transparent;
+    border-width: 15px
+}
+
+/* start memmbares page */
+h1{
+    color: #666;
+    font-size: 55px;
+    margin: 40px 0;
+    font-weight: bold
+}
+
+.show-pass{
+    position: absolute;
+    top: 6px;
+    right: -30px;
+}
+
+.main-table {
+    box-shadow: 0 3px 10px #ccc;
+}
+
+.main-table td{
+    background: #fff;
+    vertical-align: middle !important;
+}
+
+.main-table .btn{
+    padding: 3px 10px;
+}
+
+.main-table tr:first-child td{
+    color: #fff;
+    background-color: #333;
+}
+
+.activate {
+    margin-left: 5px
+}
+
+/* start catigories page */
+
+.cats .panel-heading {
+    color: #6a6a6a;
+    font-weight: bold
+}
+
+.cats .panel-body {
+    padding: 0;
+}
+
+.option a{
+    color: #888;
+    text-decoration: none
+}
+
+.option span{
+    color: #888;
+    cursor: pointer
+}
+
+.option .active {
+    color: #f00;
+}
+
+.cats .cat {
+    padding: 15px;
+    position: relative;
+    overflow: hidden
+}
+
+.cats .cat:hover {
+    background: #eee
+}
+
+.cats .cat:hover .hidden-btn{/* import idea */
+    right: 10px;
+}
+
+.cats .cat .hidden-btn{
+    transition: all .5s ease-in-out;
+    position: absolute;
+    top: 15px;
+    right: -150px;
+}
+
+.cats .cat .hidden-btn a{
+    margin-right: 5px;
+}
+
+.cats hr{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.cats .cat h3 {
+    margin: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #757575
+}
+
+.cats .cat p {
+    margin: 10px 0;
+    color: #757575;
+    
+}
+
+.cats .cat:last-of-type ~ hr{
+    display: none;
+}
+
+.cats .cat .visible {
+    color: #fff;
+    background: #c0392b;
+    padding: 4px 6px;
+    border-radius: 6px;
+    margin-right: 10px
+}
+
+.cats .cat .comment {
+    color: #fff;
+    background: #2c3e50;
+    padding: 4px 6px;
+    border-radius: 6px;
+    margin-right: 10px
+}
+
+.cats .cat .ads {
+    color: #fff;
+    background: #d35400;
+    padding: 4px 6px;
+    border-radius: 6px;
+    margin-right: 10px
+}
+
+.cats .add_cat {
+    margin-bottom: 30px;
+    margin-top: -10px
+}
+
+.sub-head{
+    margin: 15px 0 10px;
+    font-weight: bold;
+    color: #22ab79;
+    font-size: 16px
+}
+
+.subcats {
+    margin: 0;
+}
+
+.subcats li {
+    margin-left: 15px
+}
+
+.subcats li:before {
+    content: " - ";
+}
+
+.show-delete {
+    color: #f00;
+    display: none
+}

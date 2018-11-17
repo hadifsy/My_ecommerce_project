@@ -1,0 +1,45 @@
+============================================
+========= * function document * ============
+============================================
+
+getAllFrom($fild, $table, $where=null, $and=null, $order, $ordering='DESC', $limt=null, $join=null, $cond=null)
+check($fild, $table, $where=null, $and=null)
+
+=========================================================================================
+
+function getAllFrom($fild, $table, $where=null, $and=null, $order, $ordering='DESC', $limt=null, $join=null, $cond=null) {
+    global $con;
+    $sql = $join == null ? '' : "INNER JOIN $join ON $cond";
+    $getAll = $con -> prepare("SELECT $fild FROM $table $sql $where $and ORDER BY $order $ordering $limt");
+    $getAll->execute();
+    $all = $getAll->fetchAll();// fetch all data array 2 dimn
+    return $all;
+}
+
+function check($fild, $table, $where=null, $and=null) {
+    global $con;
+    $stmt = $con->prepare("SELECT $fild FROM $table $where $and");
+    $stmt->execute();
+    $check = $stmt -> rowCount(); // return num row 
+    return $check;
+}
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+/* 
+** getAllFrom fun
+** function get all info from db
+** $fild, $table, $where, $and => basc select from sql :: [SELECT fild FROM table WHERE id=9 AND user=7]
+** $order, $ordering           => ORDER BY $order $ordering :: [ORDER BY id DESC]
+** $limt                       => LIMIT num :: [LIMIT 3]
+** $join, $cond                => if join equil null no JOIN else :: [INNER JOIN $join ON $cond]
+** ex: select (*) from (items) [where id=0] [and name=''] order by (id) [asc] [LIMT 5] [INNER JOIN (users) ON (id=userid)]
+** no forget write where,and,... if you want enter
+*/
+
+/* 
+** check fun
+** bool function check every thing in db[item , status, ...]
+** return 1 if found/active/aprove ...
+** return 0 if not found ...
+** ex: select (*) from (items) [where id=0] [and name=''] order by (id) [asc]
+*/
