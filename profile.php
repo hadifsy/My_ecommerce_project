@@ -6,6 +6,7 @@
         $getUser = $con->prepare("SELECT * FROM users WHERE userName = ?");
         $getUser->execute(array($sessionUser));
         $info = $getUser->fetch();
+        //test
 ?>
 
 <h1 class="text-center">My Profile</h1>
